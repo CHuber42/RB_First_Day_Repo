@@ -5,99 +5,104 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_marginTop="80dp"
+        android:id="@+id/tv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Sign Up"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tv_signup"
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="Name"
+        android:background="@drawable/form_button_rounded"
+        />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/et_name"
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="E-mail"
+        android:background="@drawable/form_button_rounded"/>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/et_email"
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="Password"
+        android:background="@drawable/form_button_rounded"
+        android:shadowRadius="50"
+        android:shadowColor="#3446eb"
+        />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/et_password"
+        android:id="@+id/tv_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="I agree to terms &amp; Conditions"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        />
 
     <Button
-        android:id="@+id/btn_1"
-        android:layout_width="100dp"
-        android:text="1"
-        android:layout_height="100dp"
-        android:layout_marginLeft="40dp"/>
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tv_terms"
+        android:id="@+id/tv_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Create Account"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFFFFF"
+        />
 
-    <Button
-        android:id="@+id/btn_2"
-        android:layout_width="100dp"
-        android:text="2"
-        android:layout_toEndOf="@id/btn_1"
-        android:layout_height="100dp" />
+    <TextView
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tv_create_account"
+        android:id="@+id/tv_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Already have an account?"
+        android:textSize="12sp" />
 
-    <Button
-        android:id="@+id/btn_3"
-        android:layout_width="100dp"
-        android:text="3"
-        android:layout_height="100dp"
-        android:layout_toEndOf="@id/btn_2"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tv_create_account"
+        android:id="@+id/tv_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="  Sign In"
+        android:textSize="12sp"
+        android:layout_toEndOf="@id/tv_have_account"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        />
 
 
-    <Button
-        android:id="@+id/btn_4"
-        android:layout_width="100dp"
-        android:text="4"
-        android:layout_height="100dp"
-        android:layout_marginLeft="40dp"
-        android:layout_below="@id/btn_1"/>
 
-    <Button
-        android:id="@+id/btn_5"
-        android:layout_width="100dp"
-        android:text="5"
-        android:layout_height="100dp"
-        android:layout_toEndOf="@id/btn_4"
-        android:layout_below="@id/btn_2"/>
 
-    <Button
-        android:id="@+id/btn_6"
-        android:layout_width="100dp"
-        android:text="6"
-        android:layout_height="100dp"
-        android:layout_toEndOf="@id/btn_5"
-        android:layout_below="@id/btn_3"/>
 
-    <Button
-        android:id="@+id/btn_7"
-        android:layout_width="100dp"
-        android:text="7"
-        android:layout_height="100dp"
-        android:layout_marginLeft="40dp"
-        android:layout_below="@id/btn_4"/>
-
-    <Button
-        android:id="@+id/btn_8"
-        android:layout_width="100dp"
-        android:text="8"
-        android:layout_height="100dp"
-        android:layout_toEndOf="@id/btn_7"
-        android:layout_below="@id/btn_5"/>
-
-    <Button
-        android:id="@+id/btn_9"
-        android:layout_width="100dp"
-        android:text="9"
-        android:layout_height="100dp"
-        android:layout_toEndOf="@id/btn_8"
-        android:layout_below="@id/btn_6"/>
-
-    <Button
-        android:id="@+id/btn_star"
-        android:layout_width="100dp"
-        android:text="*"
-        android:layout_height="100dp"
-        android:layout_marginLeft="40dp"
-        android:layout_below="@id/btn_7"/>
-
-    <Button
-        android:id="@+id/btn_0"
-        android:layout_width="100dp"
-        android:text="0"
-        android:layout_height="100dp"
-        android:layout_below="@id/btn_8"
-        android:layout_toEndOf="@id/btn_7"/>
-
-    <Button
-        android:id="@+id/btn_pound"
-        android:layout_width="100dp"
-        android:text="#"
-        android:layout_height="100dp"
-        android:layout_below="@id/btn_7"
-        android:layout_toEndOf="@id/btn_8"/>
 
 </RelativeLayout>
